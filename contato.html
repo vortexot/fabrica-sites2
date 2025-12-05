@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<!-- Define o padrão de caracteres (pra aceitar acentos e tals) -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Faz o site ficar responsivo no celular -->
+
+<title>Contato</title>
+<!-- Título da aba -->
+
+<style>
+  /* ESTILO GERAL DA PÁGINA */
+  body {
+    font-family: Arial, sans-serif; /* Fonte simples e clean */
+    background: #0d0f17;            /* Fundo escuro padrão do site */
+    color: white;                   /* Texto branco pra contraste */
+    padding: 20px;                  /* Respiro nas bordas */
+  }
+
+  /* MENU FIXO NO TOPO */
+ .menu {
+  width: 100%;                        /* O menu ocupa toda a largura */
+  background: #141724;                /* Fundo escuro */
+  padding: 15px;                      /* Espaçamento interno */
+  display: flex;                      /* Alinha os itens lado a lado */
+  justify-content: center;            /* Centraliza os links */
+  gap: 25px;                          /* Espaço entre os links */
+  border-bottom: 2px solid #4aa6ff;   /* Linha azul embaixo */
+  position: fixed;                    /* Fica colado no topo */
+  top: 0;
+  left: 0;
+  z-index: 9999;                      /* Fica sempre na frente */
+}
+
+.menu a {
+  color: #4aa6ff;                     /* Azul padrão do projeto */
+  text-decoration: none;              /* Sem sublinhado */
+  font-weight: bold;                  /* Mais destaque */
+  font-size: 1rem;
+  transition: 0.2s;                   /* Animação suave */
+}
+
+.menu a:hover {
+  color: #fff;                        /* Fica branco ao passar o mouse */
+  transform: scale(1.05);             /* Dá uma aumentada leve */
+}
+
+  /* CAIXA QUE GUARDA AS INFORMAÇÕES */
+  .box {
+    background: #141724;       /* Mesmo fundo do menu pra manter o tema */
+    padding: 20px;             /* Espaço interno */
+    border-radius: 10px;       /* Bordas arredondadas */
+    max-width: 400px;          /* Largura máxima */
+    margin: auto;              /* Centraliza na página */
+    margin-top: 120px;         /* EMPURRA PRA BAIXO POR CAUSA DO MENU FIXO */
+  }
+
+  /* CADA LINHA DE INFORMAÇÃO */
+  p {
+    background: #1a1d2e;       /* Fundo um pouco mais claro */
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  /* DESTAQUE DO TÍTULO DE CADA LINHA (Instagram, Telefone etc.) */
+  span {
+    color: #4aa6ff;
+    font-weight: bold;
+  }
+</style>
+
+</head>
+<body>
+
+  <!-- MENU DE NAVEGAÇÃO -->
+<div class="menu">
+  <a href="inicio.html">Início</a>
+  <a href="index.html">Formulário</a>
+  <a href="contato.html">Contato</a>
+</div>
+
+<!-- CONTEÚDO PRINCIPAL -->
+<div class="box">
+  <h2>Contato</h2>
+
+  <p><span>Instagram:</span> chocoo.ot</p>
+  <p><span>Telefone:</span> 61 99566-2684</p>
+  <p><span>Grupo de Desenvolvimento:</span> Tech Hub</p>
+  <p><span>Desenvolvedor:</span> Guilherme Ferreira Duarte</p>
+</div>
+
+</body>
+</html>

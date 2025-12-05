@@ -1,0 +1,70 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8"> 
+    <!-- Define a codificação pra aceitar acentos, emojis e tudo mais -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz o layout ajustar certinho no celular -->
+
+    <title>Formulário - Mundo de Gumball</title>
+    <!-- Título da aba do navegador -->
+
+    <link rel="stylesheet" href="formulario.css">
+    <!-- Liga o HTML ao arquivo de estilos -->
+</head>
+
+<body>
+
+    <!-- MENU FIXO NO TOPO -->
+    <nav class="menu">
+        <a href="inicio.html">Início</a>
+        <a href="index.html">Formulário</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <!-- CONTAINER DO FORMULÁRIO -->
+    <div>
+        <!-- onsubmit chama validaForm(); se ela retornar false, o form NÃO envia -->
+        <form onsubmit="return validaForm()">
+            <fieldset>
+                <!-- Só um título dentro do quadrado -->
+                <legend>Formulário</legend>
+
+                <!-- CAMPO NOME -->
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+
+                <!-- CAMPO EMAIL -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Digite seu email">
+
+                <!-- CAMPO MENSAGEM -->
+                <label for="msg">Mensagem:</label>
+                <textarea id="msg" rows="5" placeholder="Digite sua mensagem"></textarea>
+
+                <!-- BOTÃO DE ENVIO -->
+                <button class="button" type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- MENSAGEM DE SUCESSO (começa escondida) -->
+    <div id="msgSucesso"
+        style="
+            display:none;
+            background:#4aa6ff;
+            color:#000;
+            padding:15px;
+            margin-top:20px;
+            border-radius:8px;
+            font-weight:bold;
+            text-align:center;
+        ">
+        Formulário enviado com sucesso!
+    </div>
+
+    <!-- LIGA O SCRIPT DO FORMULÁRIO -->
+    <script src="formulario.js"></script>
+
+</body>
+</html>

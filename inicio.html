@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>O Incrível Mundo de Gumball — Fan Site</title>
+  <meta name="description" content="Fan site responsivo sobre 'O Incrível Mundo de Gumball' — personagens, episódios, jogos e curiosidades." />
+ <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+  <!-- MENU -->
+<div class="menu">
+  <a href="inicio.html">Início</a>
+  <a href="index.html">Formulário</a>
+  <a href="contato.html">Contato</a>
+</div>
+
+  <div class="wrap" id="app">
+    <header>
+      <div class="logo">
+        <div class="mark"><img src="/5630582cda84882923f4ec98fd266595a75120aeb9196a2312f88cc7165bf0ff._RI_TTW_.jpg" alt="" class="imagens"></div>
+        <div>
+          <h1>O Incrível Mundo de Gumball</h1>
+          <div style="font-size:12px;color:var(--muted)">Fan site — projeto demo</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#personagens">Personagens</a>
+        <a href="#episodios">Episódios</a>
+        <a href="#curiosidades">Curiosidades</a>
+        <a href="#jogos">Jogos</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="card intro">
+          <h2>Bem-vindo ao Universo de Gumball</h2>
+          <p>Explore personagens, episódios memoráveis, curiosidades e mini-jogos. Este site é fã e educativo — para uso pessoal/estudo.</p>
+
+          <div class="cta-row">
+            <button class="btn" id="open-trivia">Jogar Trivia</button>
+            <button class="btn ghost" id="toggle-theme">Alternar Tema</button>
+          </div>
+
+          <hr style="margin:16px 0;opacity:0.06;border:0;height:1px;background:rgba(255,255,255,0.03)">
+
+          <h3 style="margin:8px 0 6px 0">Sobre a série</h3>
+          <p style="color:var(--muted);margin:0 0 12px">O Incrível Mundo de Gumball mistura humor visual com situações absurdas no cotidiano de uma família pouco convencional. Use os cards ao lado para conhecer os protagonistas.</p>
+
+          <h4 style="margin:12px 0 6px 0">Destaques</h4>
+          <ul style="color:var(--muted);margin:0;padding-left:16px">
+            <li>Humor surrelista</li>
+            <li>Personagens carismáticos</li>
+            <li>Episódios curtos e criativos</li>
+          </ul>
+        </div>
+
+        <aside class="chars">
+          <div class="card char">
+            <div class="avatar"><img src="baixados.webp" alt="" class="imagens"></div>
+            <div>
+              <h4>Gumball Watterson</h4>
+              <p>Protagonista energético, sempre se mete em confusão.</p>
+            </div>
+          </div>
+
+          <div class="card char">
+            <div class="avatar"><img src="baixados (1).webp" alt="" class="imagens"></div>
+            <div>
+              <h4>Darwin</h4>
+              <p>Melhor amigo e irmão adotivo — coração gigante.</p>
+            </div>
+          </div>
+
+          <div class="card char">
+            <div class="avatar"><img src="anais_watterson___shake_your_body_pose___vector_by_mfsjst_dgtoin4-pre.png" alt="" class="imagens"></div>
+            <div>
+              <h4>Anais</h4>
+              <p>Irmã prodígio: inteligente e prática.</p>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="grid" id="personagens">
+        <div class="card">
+          <h3>Personagens Principais</h3>
+          <p style="color:var(--muted)">Breve biografia e curiosidades.</p>
+          <ul style="margin-top:10px;color:var(--muted)">
+            <li><strong>Gumball</strong> — gato azul, travesso e carismático.</li>
+            <li><strong>Darwin</strong> — peixe que virou irmão e companheiro de aventuras.</li>
+            <li><strong>Anais</strong> — coelha prodígio, voz da razão.</li>
+          </ul>
+        </div>
+
+        <div class="card" id="episodios">
+          <h3>Episódios Recomendados</h3>
+          <ul class="episode-list" id="episode-list"></ul>
+          <button class="btn" id="load-episodes" style="margin-top:10px">Carregar episódios</button>
+        </div>
+
+        <div class="card" id="curiosidades">
+          <h3>Curiosidades</h3>
+          <p style="color:var(--muted)">Fatos rápidos e referências escondidas.</p>
+          <ol style="color:var(--muted);margin-top:10px">
+            <li>Estilo de animação mistura técnicas 2D e 3D.</li>
+            <li>Os roteiros brincam com gêneros e metalinguagem.</li>
+            <li>Há easter-eggs que aparecem repetidamente em alguns episódios.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="card" id="jogos">
+        <h3>Mini-jogo: Adivinhe o Personagem</h3>
+        <p style="color:var(--muted)">Descrevemos traços; você escolhe quem é.</p>
+        <div style="display:flex;gap:8px;margin-top:8px">
+          <input id="guess-input" placeholder="Seu palpite" style="flex:1;padding:10px;border-radius:8px;border:0;background:rgba(255,255,255,0.02);color:inherit">
+          <button class="btn" id="guess-btn">Chutar</button>
+        </div>
+        <div id="guess-result" style="margin-top:10px;color:var(--muted)"></div>
+      </section>
+
+    </main>
+
+    <footer class="card" style="margin-top:18px">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+        <div style="color:var(--muted)">Projeto fan — para estudo e demonstração. Não é afiliado ao estúdio criador.</div>
+        <div><small style="color:var(--muted)">Feito com 💙 por Guilhermin 1b</small></div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Modal Trivia -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="inner">
+      <h3>Trivia: Quem disse isso?</h3>
+      <p id="trivia-question" style="color:var(--muted)"></p>
+      <div style="display:flex;gap:8px;margin-top:12px">
+        <input id="trivia-answer" placeholder="Nome do personagem" style="flex:1;padding:10px;border-radius:8px;border:0;background:rgba(255,255,255,0.02);color:inherit">
+        <button class="btn" id="trivia-check">Verificar</button>
+      </div>
+      <div id="trivia-result" style="margin-top:10px;color:var(--muted)"></div>
+      <div style="text-align:right;margin-top:12px">
+        <button class="btn ghost" id="close-modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+<script src="inicio.js"></script>
+</body>
+</html>
